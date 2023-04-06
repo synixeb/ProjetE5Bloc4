@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompteController;
 use App\Http\Controllers\PraticienController;
+use App\Http\Controllers\SpeController;
 
 
 /*
@@ -29,4 +30,5 @@ Route::get('/supprimerPraticien/{id}', [PraticienController::class, 'supprimePra
 Route::get('/modifierPraticien/{id}', [PraticienController::class, 'updatePraticien']);
 Route::post('validerInsertPraticien', [PraticienController::class, 'validateInsertPraticien']);
 Route::post('validerUpdatePraticien', [PraticienController::class, 'validateUpdatePraticien']);
+Route::get('/getSpecialitesListe', [SpeController::class, 'getSpecialitesListe']);
 

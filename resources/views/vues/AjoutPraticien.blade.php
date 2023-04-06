@@ -52,7 +52,7 @@
         <div class="form-group">
             <label class="col-md-3 col-sm-3 control-label">Coefficient de notoriété : </label>
             <div class="col-md-2 col-sm-2">
-                <input type="number" name="adressepraticien" value="{{$unPraticien->coef_notoriete ?? ""}} " class="form-control" placeholder="Le coefficient" required>
+                <input type="number" name="coefnotoriete" value="{{$unPraticien->coef_notoriete ?? ""}} " class="form-control" placeholder="Le coefficient" required>
             </div>
         </div>
 

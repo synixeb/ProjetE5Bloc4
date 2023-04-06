@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Commit inital" />
+    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Commit inital">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/metier/Specialite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ServicePraticien.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServicePraticien.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vues/AjoutPraticien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/AjoutPraticien.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vues/ModifPraticien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/ModifPraticien.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +35,11 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="d8ddbe4d-0bc4-400e-8fa2-1f364365bdef" name="localhost" />
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -143,14 +160,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/hbela/ProjetE5Bloc4",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/hbela/ProjetE5Bloc4&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\config" />
@@ -178,7 +195,9 @@
       <workItem from="1656334645669" duration="21000" />
       <workItem from="1656339462042" duration="176000" />
       <workItem from="1680785952822" duration="38000" />
-      <workItem from="1680786132013" duration="2962000" />
+      <workItem from="1680786132013" duration="4491000" />
+      <workItem from="1680790852818" duration="1681000" />
+      <workItem from="1680792576979" duration="3195000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>

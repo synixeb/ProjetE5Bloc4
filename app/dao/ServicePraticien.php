@@ -33,13 +33,12 @@ class ServicePraticien
         }
     }
 
-    public function insertPraticien($id_praticien, $id_type_praticien,
+    public function insertPraticien($id_type_praticien,
     $nom_praticien, $prenom_praticien, $adresse_praticien, $cp_praticien,
     $ville_praticien, $coef_notoriete) {
         try {
             DB::table('praticien')->insert(
-                ['id_praticien'=>$id_praticien,
-                    'id_type_praticien'=>$id_type_praticien,
+                ['id_type_praticien'=>$id_type_praticien,
                     'nom_praticien'=>$nom_praticien,
                     'prenom_praticien'=>$prenom_praticien,
                     'adresse_praticien'=>$adresse_praticien,

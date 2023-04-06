@@ -72,14 +72,14 @@ class PraticienController
 
     public function validateUpdatePraticien() {
         try {
-            $id_praticien = Request::input('id_praticien');
-            $id_type_praticien = Request::input('id_type_praticien');
-            $nom_praticien = Request::input('nom_praticien');
-            $prenom_praticien = Request::input('prenom_praticien');
-            $adresse_praticien = Request::input('adresse_praticien');
-            $cp_praticien = Request::input('cp_praticien');
-            $ville_praticien = Request::input('ville_praticien');
-            $coef_notoriete = Request::input('coef_notoriete');
+            $id_praticien = Request::input('idpraticien');
+            $id_type_praticien = Request::input('typepraticien');
+            $nom_praticien = Request::input('nompraticien');
+            $prenom_praticien = Request::input('prenompraticien');
+            $adresse_praticien = Request::input('adressepraticien');
+            $cp_praticien = Request::input('cppraticien');
+            $ville_praticien = Request::input('villepraticien');
+            $coef_notoriete = Request::input('coefnotoriete');
             $unServicePraticien = new ServicePraticien();
             $unServicePraticien->updatePraticien($id_praticien, $id_type_praticien, $nom_praticien, $prenom_praticien, $adresse_praticien, $cp_praticien, $ville_praticien, $coef_notoriete);
             return redirect('/getPraticienListe');
@@ -94,16 +94,16 @@ class PraticienController
 
     public function validateInsertPraticien() {
         try {
-            $id_praticien = Request::input('id_praticien');
-            $id_type_praticien = Request::input('id_type_praticien');
-            $nom_praticien = Request::input('nom_praticien');
-            $prenom_praticien = Request::input('prenom_praticien');
-            $adresse_praticien = Request::input('adresse_praticien');
-            $cp_praticien = Request::input('cp_praticien');
-            $ville_praticien = Request::input('ville_praticien');
-            $coef_notoriete = Request::input('coef_notoriete');
+            $id_type_praticien = Request::input('typepraticien');
+            $nom_praticien = Request::input('nompraticien');
+            $prenom_praticien = Request::input('prenompraticien');
+            $adresse_praticien = Request::input('adressepraticien');
+            $cp_praticien = Request::input('cppraticien');
+            $ville_praticien = Request::input('villepraticien');
+            $coef_notoriete = Request::input('coefnotoriete');
+
             $unServicePraticien = new ServicePraticien();
-            $unServicePraticien->insertPraticien($id_praticien, $id_type_praticien, $nom_praticien, $prenom_praticien,
+            $unServicePraticien->insertPraticien($id_type_praticien, $nom_praticien, $prenom_praticien,
                 $adresse_praticien, $cp_praticien, $ville_praticien, $coef_notoriete);
             return redirect('/getPraticienListe');
         } catch (MonException $e) {
