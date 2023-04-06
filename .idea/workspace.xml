@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="" />
+    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../E4ProjetBloc4" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -139,30 +143,29 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2B1Zt6VIK3NDVJlQQJ45yIe9Vgg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/hbela/E4ProjetBloc4/app/Exceptions",
+    "last_opened_file_path": "C:/xampp/htdocs/hbela/ProjetE5Bloc4",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\hbela\E4ProjetBloc4\app\Exceptions" />
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\config" />
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hbela\ProjetE5Bloc4" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="ProjetTemplate" type="JavascriptDebugType" uri="http://localhost/hbela/ProjetTemplate/public/">
+    <configuration name="ProjetE5Bloc4" type="JavascriptDebugType" uri="http://localhost/hbela/ProjetE5Bloc4/public/">
       <method v="2" />
     </configuration>
   </component>
@@ -178,8 +181,8 @@
       <workItem from="1656075804822" duration="1306000" />
       <workItem from="1656334645669" duration="21000" />
       <workItem from="1656339462042" duration="176000" />
-      <workItem from="1678379088871" duration="124000" />
-      <workItem from="1678379409872" duration="96000" />
+      <workItem from="1680785952822" duration="38000" />
+      <workItem from="1680786132013" duration="2036000" />
     </task>
     <servers />
   </component>
