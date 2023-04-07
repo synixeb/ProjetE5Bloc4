@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Spécialités">
-      <change afterPath="$PROJECT_DIR$/resources/views/vues/ModifSpe.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao/ServicePraticien.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServicePraticien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao/ServiceSpe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +188,7 @@
       <workItem from="1680786132013" duration="4491000" />
       <workItem from="1680790852818" duration="1681000" />
       <workItem from="1680792576979" duration="3729000" />
-      <workItem from="1680848145998" duration="14860000" />
+      <workItem from="1680848145998" duration="16661000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -217,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680858862946</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modifications Spécialités">
+      <created>1680871965292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680871965292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
