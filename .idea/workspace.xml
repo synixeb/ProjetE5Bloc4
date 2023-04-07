@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Spécialités">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Spécialités" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,14 +148,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/hbela/ProjetE5Bloc4&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/hbela/ProjetWSGsb",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\config" />
@@ -188,7 +186,7 @@
       <workItem from="1680786132013" duration="4491000" />
       <workItem from="1680790852818" duration="1681000" />
       <workItem from="1680792576979" duration="3729000" />
-      <workItem from="1680848145998" duration="16661000" />
+      <workItem from="1680848145998" duration="16978000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680871965292</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modifications Spécialités">
+      <created>1680874713094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680874713094</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
