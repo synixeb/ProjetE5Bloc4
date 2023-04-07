@@ -69,12 +69,25 @@ class ServicePraticien
         }
     }
 
-
     public function deletePraticien($id_praticien) {
         try {
             DB::table('praticien')->where('id_praticien', '=', $id_praticien)->delete();
         } catch (QueryException $e) {
             throw new MonException($e->getMessage(), 5);
         }
+    }
+
+    public function getSpecialite($idSpe){
+        $lesSpe = DB::table('specialite')
+            ->whereNotExists( function($query) use ($idSpe){
+                $idPra=Session::get('idPra');
+                $query->select(DB::Raw(1))
+                    ->from('posseder')
+                    ->whereRaw('posseder.id_specialite = specialite.id_specialite')
+                    ->where('id_praticien', '=', $idPra);
+            })
+            ->get();
+        Session::put('idSpe', $idSpe);
+        return $lesSpe;
     }
 }

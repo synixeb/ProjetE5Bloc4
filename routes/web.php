@@ -31,4 +31,20 @@ Route::get('/modifierPraticien/{id}', [PraticienController::class, 'updatePratic
 Route::post('validerInsertPraticien', [PraticienController::class, 'validateInsertPraticien']);
 Route::post('validerUpdatePraticien', [PraticienController::class, 'validateUpdatePraticien']);
 Route::get('/listerSpe/{id}', [SpeController::class, 'SpeById']);
+Route::get('/supprSpe/{id}', [SpeController::class,'suppr']);
+Route::get('/modifSpe/{id}', [SpeController::class,'modifSpe']);
+
+Route::post('/postModifSpe',
+    array(
+        'uses'=> 'App\Http\Controllers\SpeController@postModifSpe',
+        'as'=> 'postModifSpe',
+    )
+);
+
+Route::post('/postAjouterSpe',
+    array(
+        'uses'=> 'App\Http\Controllers\SpeController@postAjout',
+        'as'=> 'postAjout',
+    )
+);
 

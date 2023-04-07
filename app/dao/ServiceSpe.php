@@ -5,6 +5,7 @@ namespace App\dao;
 use App\Exceptions\MonException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Request;
 
 class ServiceSpe
 {
@@ -20,6 +21,18 @@ class ServiceSpe
                 ->OrderBy('lib_specialite')
                 ->get();
             return $mesPra;
+        }catch (Exception $e){
+            throw new MonException($e->getMessage(),5);
+        }
+    }
+
+    public function getSuppr($id)
+    {
+        try{
+            $mesPra= DB::table('posseder')
+                ->where('posseder.id_specialite','=',$id)
+                ->where('posseder.id_praticien','=' ,Session::get('idPra'))
+                ->delete();
         }catch (Exception $e){
             throw new MonException($e->getMessage(),5);
         }
@@ -54,5 +67,32 @@ class ServiceSpe
             throw new MonException($e->getMessage(),5);
         }
     }
+
+    public function modifSpe($idPra,$idSpe){
+        try {
+            $oldidSpe = Session::get('idSpe');
+            DB::table('posseder')
+                ->where('id_praticien', '=', $idPra)
+                ->where('id_specialite','=',$oldidSpe)
+                ->update(['id_specialite'=> $idSpe]);
+        }catch (QueryException $e){
+            throw new MonException($e->getMessage(),5);
+        }
+    }
+
+    public function getAjout($idPra ,$idSpe)
+    {
+        try{
+            DB::table('posseder')->insert(
+                ['id_praticien'=>$idPra,
+                    'id_specialite'=>$idSpe,
+                    'diplome'=>'canis canis',
+                    'coef_prescription'=>49.3]
+            );
+        }catch (Exception $e){
+            throw new MonException($e->getMessage(),5);
+        }
+    }
+
 
 }
