@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Commit inital">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/metier/Specialite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao/ServicePraticien.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServicePraticien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vues/AjoutPraticien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/AjoutPraticien.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ServiceSpe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vues/ModifPraticien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/ModifPraticien.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vues/listerPraticien.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/listerPraticien.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/listerSpe.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -197,7 +193,8 @@
       <workItem from="1680785952822" duration="38000" />
       <workItem from="1680786132013" duration="4491000" />
       <workItem from="1680790852818" duration="1681000" />
-      <workItem from="1680792576979" duration="3195000" />
+      <workItem from="1680792576979" duration="3729000" />
+      <workItem from="1680848145998" duration="4821000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -206,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680788951801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit inital">
+      <created>1680796397108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680796397108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

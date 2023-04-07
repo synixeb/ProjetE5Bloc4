@@ -6,9 +6,16 @@
     <div class="form-horizontal">
 
         <div class="form-group">
+            <label class="col-md-3 col-sm-3 control-label">ID du praticien : </label>
+            <div class="col-md-2  col-sm-2">
+                <input type="number" name="idpraticien" value=" {{$unPraticien->id_praticien ?? 0}} "  class="form-control" placeholder="{{$unPraticien->id_praticien}}" required autofocus>
+            </div>
+        </div>
+
+        <div class="form-group">
             <label class="col-md-3 col-sm-3 control-label">Type de praticien : </label>
             <div class="col-md-2  col-sm-2">
-                <input type="number" name="typepraticien" value=" {{$unPraticien->id_type_praticien ?? 0}} "  class="form-control" placeholder="{{$unPraticien->id_type_praticien}}" required autofocus>
+                <input type="number" name="typepraticien" value=" {{$unPraticien->id_type_praticien ?? 0}} "  class="form-control" placeholder="{{$unPraticien->id_type_praticien}}" required>
             </div>
         </div>
 

@@ -15,10 +15,10 @@
                     <th style="width:30%">Libellé</th>
                 </tr>
                 </thead>
-                @foreach($mesSpecialites as $uneSpecialite)
+                @foreach($mesSpe as $uneSpe)
                     <tr>
-                        <td> {{$uneSpecialite->id_specialite}}</td>
-                        <td> {{$uneSpecialite->lib_specialite}}</td>
+                        <td> {{$uneSpe->id_specialite}}</td>
+                        <td> {{$uneSpe->lib_specialite}}</td>
                         <td style="text-align:center;"><a href="{{ url('/modifierSpecialite') }}/{{$uneSpecialite->id_specialite}}">
                                 <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Modifier"></span></a></td>
                         <td style="text-align:center;">

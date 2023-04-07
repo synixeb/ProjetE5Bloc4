@@ -18,6 +18,7 @@
                     <th style="width:20%">Code Postal</th>
                     <th style="width:20%">Ville</th>
                     <th style="width:20%">Coefficient</th>
+                    <th style="width:20%">Modifier les spécialités</th>
                     <th style="width:20%">Modifier</th>
                     <th style="width:20%">Supprimer</th>
                 </tr>
@@ -31,6 +32,11 @@
                         <td> {{$unPraticien->cp_praticien}}</td>
                         <td> {{$unPraticien->ville_praticien}}</td>
                         <td> {{$unPraticien->coef_notoriete}}</td>
+                        @if (Session::get('id')>0)
+                            <td>
+                                <a href="{{('listerSpe')}}/{{$unPraticien->id_praticien}}"><span class ="glyphicon glyphicon-book" data-toggle="tooltip" data-placement="top" title="ModifierSpe"></span></a>
+                            </td>
+                        @endif
                         <td style="text-align:center;"><a href="{{ url('/modifierPraticien') }}/{{$unPraticien->id_praticien}}">
                                 <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Modifier"></span></a></td>
                         <td style="text-align:center;">

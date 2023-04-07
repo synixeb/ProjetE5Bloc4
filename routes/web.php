@@ -30,5 +30,5 @@ Route::get('/supprimerPraticien/{id}', [PraticienController::class, 'supprimePra
 Route::get('/modifierPraticien/{id}', [PraticienController::class, 'updatePraticien']);
 Route::post('validerInsertPraticien', [PraticienController::class, 'validateInsertPraticien']);
 Route::post('validerUpdatePraticien', [PraticienController::class, 'validateUpdatePraticien']);
-Route::get('/getSpecialitesListe', [SpeController::class, 'getSpecialitesListe']);
+Route::get('/listerSpe/{id}', [SpeController::class, 'SpeById']);
 

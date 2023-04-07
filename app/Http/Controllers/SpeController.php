@@ -8,19 +8,19 @@ use Illuminate\Support\Facades\Session;
 
 class SpeController
 {
-    public function SpeByID() {
+    public function SpebyID($id){
         try {
-            $monErreur = Session::get('monErreur');
-            Session::forget('monErreur');
-            $unServiceSpe = new ServiceSpe();
-            $mesSpecialites = $unServiceSpe->getListeSpecialites();
-            return view('Vues/listerSpe', compact('mesSpecialites', 'monErreur'));
-        } catch (MonException $e) {
+            $uneSpe = new ServiceSpe();
+            $mesSpe = $uneSpe->getListeSpe($id);
+            $AllSpe = $uneSpe->SpeByID($id);
+            Session::put('idPra', $id);
+            return view('vues/listerSpe', compact('mesSpe' ,'AllSpe'));
+        } catch (monException $e) {
             $monErreur = $e->getMessage();
-            return view('vues/error', compact('monErreur'));
+            return view('vues/pageErreur', compact('monErreur'));
         } catch (Exception $e) {
-            $monErreur = $e->getMessage();
-            return view('vues/error', compact('monErreur'));
+            $Erreur = $e->getMessage();
+            return view('vues/pageErreur', compact('Erreur'));
         }
     }
 
