@@ -114,4 +114,19 @@ class PraticienController
             return view('vues/error', compact('monErreur'));
         }
     }
+
+    public function postSearch(){
+        try {
+            $nom = Request::input("nom");
+
+            $uneSpe = new ServiceSpecialite();
+            $SearchSpe = $uneSpe->getSpeSearch($nom);
+
+            $unPra = new ServicePraticien();
+            $SearchPra = $unPra->getPraSearch($nom);
+            return view('vues/SearchResult', compact('SearchSpe','SearchPra'));
+        } catch (monException $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/pageErreur', compact('monErreur'));
+        }
 }

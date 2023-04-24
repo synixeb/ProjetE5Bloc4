@@ -90,4 +90,11 @@ class ServicePraticien
         Session::put('idSpe', $idSpe);
         return $lesSpe;
     }
+
+    public function getPraSearch($nom){
+        $results = DB::table('praticien')
+            ->where('nom_praticien', 'LIKE', $nom.'%')
+            ->get();
+        return $results;
+    }
 }

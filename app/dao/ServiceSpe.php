@@ -94,5 +94,10 @@ class ServiceSpe
         }
     }
 
-
+    public function getSpeSearch($nom){
+        $results = DB::table('specialite')
+            ->where('lib_specialite', 'LIKE', $nom.'%')
+            ->get();
+        return $results;
+    }
 }
