@@ -68,7 +68,7 @@ class ServiceSpe
         }
     }
 
-    public function modifSpe($idPra,$idSpe){
+    public function modifSpe($idPra, $idSpe){
         try {
             $oldidSpe = Session::get('idSpe');
             DB::table('posseder')

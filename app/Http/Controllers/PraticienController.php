@@ -115,7 +115,8 @@ class PraticienController
         }
     }
 
-    public function postSearch(){
+    public function postSearch()
+    {
         try {
             $nom = Request::input("nom");
 
@@ -124,9 +125,10 @@ class PraticienController
 
             $unPra = new ServicePraticien();
             $SearchPra = $unPra->getPraSearch($nom);
-            return view('vues/SearchResult', compact('SearchSpe','SearchPra'));
+            return view('vues/SearchResult', compact('SearchSpe', 'SearchPra'));
         } catch (monException $e) {
             $monErreur = $e->getMessage();
             return view('vues/pageErreur', compact('monErreur'));
         }
+    }
 }

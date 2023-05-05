@@ -10,8 +10,8 @@
                     <div class="col-md-12 well well-sm">
                         <div class="form-group">
                             <select type="text" name="idSpe" value="idSpe" class="form-control" required autofocus />
-                            @foreach($AllSpe as $Spe)
-                                <option value="{{$Spe->id_specialite}}">{{$Spe->lib_specialite}}</option>
+                            @foreach($AllSpe as $uneSpe)
+                                <option value="{{$uneSpe->id_specialite}}">{{$uneSpe->lib_specialite}}</option>
                                 @endforeach
                                 </select>
                         </div>
@@ -43,19 +43,19 @@
                     <th style="width:30%">Supprimer</th>
                 </tr>
                 </thead>
-                @foreach($mesSpe as $uneSpe)
+                @foreach($mesSpe as $lesSpe)
                     <tr>
                         <td>
-                            {{$uneSpe->id_specialite}}
+                            {{$lesSpe->id_specialite}}
                         </td>
                         <td>
-                            {{$uneSpe->lib_specialite}}
+                            {{$lesSpe->lib_specialite}}
                         </td>
                             <td style="text-align: center;">
-                                <a href="{{url('/modifSpe')}}/{{$uneSpe->id_specialite}}"> <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Modifier"></span></a>
+                                <a href="{{url('/modifSpe')}}/{{$lesSpe->id_specialite}}"> <span class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="Modifier"></span></a>
                             </td>
                             <td style="text-align: center;">
-                                <a href="{{url('/supprSpe')}}/{{$uneSpe->id_specialite}}"> <span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></span></a>
+                                <a href="{{url('/supprSpe')}}/{{$lesSpe->id_specialite}}"> <span class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="Supprimer"></span></a>
                             </td>
                     </tr>
                 @endforeach

@@ -53,9 +53,9 @@ class SpeController
     public function modifSpe($oldidSpe){
         try {
             Session::put('idSpe',$oldidSpe);
-            $unServicePraticien = new ServicePraticien();
-            $lesSpeDispo = $unServicePraticien->getSpecialite($oldidSpe);
-            return view('vues/ModifSpe', compact('lesSpeDispo'));
+            $unServiceSpe = new ServiceSpe();
+            $lesSpeDispo = $unServiceSpe->AllSpe();
+            return view('vues/formModifSpe', compact('lesSpeDispo'));
         } catch (monException $e) {
             $monErreur = $e->getMessage();
             return view('vues/pageErreur', compact('monErreur'));
@@ -68,15 +68,19 @@ class SpeController
     // envoie les données de la specialite modifié
     public function postmodifSpe(){
         try {
-            $idPraticien = Request::input('idPraticien');
+            $idPraticien = Session::get('idPra');
             $idSpecialite = Request::input('idSpecialite');
 
             $uneSpe = new ServiceSpe();
-            $uneSpe->modifSpe($idPraticien, $idSpecialite);
+            $AllSpe = $uneSpe->AllSpe();
 
-            $unPra = new ServicePraticien();
-            $mesPra = $unPra->getListePraticien();
-            return view('vues/listerSpe', compact('mesPra'));
+
+            $moSpe = new ServiceSpe();
+            $laSpe = $moSpe->modifSpe($idPraticien, $idSpecialite);
+
+            $lesSpe = new ServiceSpe();
+            $mesSpe = $lesSpe->SpeById($idPraticien);
+            return view('vues/listerSpe', compact('AllSpe','laSpe', 'mesSpe'));
 
         } catch (monException $e) {
             $monErreur = $e->getMessage();
@@ -108,5 +112,6 @@ class SpeController
             return view('vues/pageErreur', compact('Erreur'));
         }
     }
+
 
 }
