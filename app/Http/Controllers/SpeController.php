@@ -80,7 +80,7 @@ class SpeController
 
             $lesSpe = new ServiceSpe();
             $mesSpe = $lesSpe->SpeById($idPraticien);
-            return view('vues/listerSpe', compact('AllSpe','laSpe', 'mesSpe'));
+            return redirect()->to('listerSpe/'.$idPraticien);
 
         } catch (monException $e) {
             $monErreur = $e->getMessage();
