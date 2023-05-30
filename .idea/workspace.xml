@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Spécialités">
-      <change afterPath="$PROJECT_DIR$/resources/views/vues/ResultatRecherche.blade.php" afterDir="false" />
+    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Recherche">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PraticienController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +197,8 @@
       <workItem from="1683270936815" duration="9789000" />
       <workItem from="1683294083857" duration="988000" />
       <workItem from="1683807488261" duration="4768000" />
-      <workItem from="1685430025753" duration="3031000" />
+      <workItem from="1685430025753" duration="3066000" />
+      <workItem from="1685434081037" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683815398778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Modifications Recherche">
+      <created>1685433623064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685433623064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +290,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inital" />
     <MESSAGE value="Modifications Spécialités" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications Spécialités" />
+    <MESSAGE value="Modifications Recherche" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications Recherche" />
   </component>
 </project>
