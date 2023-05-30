@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\dao\ServiceSpe;
 use Illuminate\Support\Facades\Session;
 use App\Exceptions\MonException;
 use Request;
@@ -120,12 +121,12 @@ class PraticienController
         try {
             $nom = Request::input("nom");
 
-            $uneSpe = new ServiceSpecialite();
+            $uneSpe = new ServiceSpe();
             $SearchSpe = $uneSpe->getSpeSearch($nom);
 
             $unPra = new ServicePraticien();
             $SearchPra = $unPra->getPraSearch($nom);
-            return view('vues/SearchResult', compact('SearchSpe', 'SearchPra'));
+            return view('vues/ResultatRecherche', compact('SearchSpe', 'SearchPra'));
         } catch (monException $e) {
             $monErreur = $e->getMessage();
             return view('vues/pageErreur', compact('monErreur'));

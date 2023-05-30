@@ -48,4 +48,11 @@ Route::post('/postAjouterSpe',
     )
 );
 
+Route::post('/postSearch',
+    array(
+        'uses'=> 'App\Http\Controllers\PraticienController@postSearch',
+        'as'=> 'postSearch',
+    )
+);
+
 

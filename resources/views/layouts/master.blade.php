@@ -37,6 +37,15 @@
                             <li><a href="{{ url('/getPraticienListe') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Lister Praticien</a></li>
                             <li><a href="{{ url('/ajouterPraticien') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Ajouter Praticien</a></li>
                         </ul>
+                        <ul class="nav navbar-nav navbar-center">
+                            <br>
+                            <li data-toggle="collapse" data-target=".navbar-collapse.in" style="align: center;">
+                                <form action="{{ route('postSearch') }}" method="POST">
+                                    <input type="text" name="search" required/>
+                                    <button type="submit">Rechercher</button>
+                                </form>
+                            </li>
+                        </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="{{ url('/getLogout') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Se déconnecter</a></li>
                         </ul>
