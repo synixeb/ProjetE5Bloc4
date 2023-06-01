@@ -47,7 +47,7 @@
                 <th style="width:10%">Modifier</th>
             </tr>
             </thead>
-            @foreach($SearchSpe as $uneSpe)
+            @foreach($SearchSpe as $lesSpe)
                 <tr>
                     <td>
                         {{$lesSpe->id_specialite}}

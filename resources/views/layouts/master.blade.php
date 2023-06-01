@@ -40,10 +40,10 @@
                         <ul class="nav navbar-nav navbar-center">
                             <br>
                             <li data-toggle="collapse" data-target=".navbar-collapse.in" style="align: center;">
-                                <form action="{{ route('postSearch') }}" method="POST">
-                                    <input type="text" name="search" required/>
-                                    <button type="submit">Rechercher</button>
-                                </form>
+                                {!! Form::open(['url' => 'postSearch', 'files' => true]) !!}
+                                <input type="search" name="nom">
+                                <input type="submit" name="button" value="Rechercher">
+                                {!! Form::close() !!}
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
