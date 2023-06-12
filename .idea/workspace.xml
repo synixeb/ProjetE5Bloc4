@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Navbar">
-      <change afterPath="$PROJECT_DIR$/resources/views/vues/ListePraSpe.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vues/resultatPraSpe.blade.php" afterDir="false" />
+    <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Premier Service">
+      <change afterPath="$PROJECT_DIR$/resources/views/vues/ListeNonPraSpe.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vues/resultatNonPraSpe.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dao/ServiceSpe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vues/resultatPraSpe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/resultatPraSpe.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,16 +157,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/hbela/ProjetE5Bloc4&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/hbela/ProjetE5Bloc4/resources/views/vues",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hbela\ProjetE5Bloc4\resources\views\vues" />
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\config" />
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\public" />
     </key>
@@ -218,7 +220,7 @@
       <workItem from="1686307042301" duration="155000" />
       <workItem from="1686552927366" duration="380000" />
       <workItem from="1686554115823" duration="18000" />
-      <workItem from="1686555310110" duration="2763000" />
+      <workItem from="1686555310110" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -304,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685627601369</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Premier Service">
+      <created>1686558276043</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558276043</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +335,7 @@
     <MESSAGE value="Modifications Spécialités" />
     <MESSAGE value="Modifications Recherche" />
     <MESSAGE value="Modifications Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications Navbar" />
+    <MESSAGE value="Premier Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Premier Service" />
   </component>
 </project>

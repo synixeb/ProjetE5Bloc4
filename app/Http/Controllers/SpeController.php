@@ -129,6 +129,22 @@ class SpeController
         }
     }
 
+    public function getListeNonPraSpe() {
+        try {
+            $monErreur = Session::get('monErreur');
+            Session::forget('monErreur');
+            $unServiceSpe = new ServiceSpe();
+            $mesSpe = $unServiceSpe->AllSpe();
+            return view('Vues/ListeNonPraSpe', compact('mesSpe', 'monErreur'));
+        } catch (MonException $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/error', compact('monErreur'));
+        } catch (Exception $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/error', compact('monErreur'));
+        }
+    }
+
     public function postListePraSpe()
     {
         try {
@@ -139,6 +155,22 @@ class SpeController
 
 
             return view('vues/resultatPraSpe', compact('resultPraSpe', 'resultPraSpe'));
+        } catch (monException $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/pageErreur', compact('monErreur'));
+        }
+    }
+
+    public function postListeNonPraSpe()
+    {
+        try {
+            $id = Request::input("idSpe");
+
+            $uneSpe = new ServiceSpe();
+            $resultNonPraSpe = $uneSpe->getListeNonPraSpe($id);
+
+
+            return view('vues/resultatNonPraSpe', compact('resultNonPraSpe', 'resultNonPraSpe'));
         } catch (monException $e) {
             $monErreur = $e->getMessage();
             return view('vues/pageErreur', compact('monErreur'));

@@ -64,4 +64,13 @@ Route::post('/postListePraSpe',
     )
 );
 
+Route::get('/listerNonPraSpe', [SpeController::class,'getListeNonPraSpe']);
+
+Route::post('/postListeNonPraSpe',
+    array(
+        'uses'=> 'App\Http\Controllers\SpeController@postListeNonPraSpe',
+        'as'=> 'postListeNonPraSpe',
+    )
+);
+
 

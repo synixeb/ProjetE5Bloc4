@@ -37,6 +37,7 @@
                             <li><a href="{{ url('/getPraticienListe') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Lister Praticien</a></li>
                             <li><a href="{{ url('/ajouterPraticien') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Ajouter Praticien</a></li>
                             <li><a href="{{ url('/listerPraSpe') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Liste des praticiens par Spécialités</a></li>
+                            <li><a href="{{ url('/listerNonPraSpe') }}" data-toggle="collapse" data-target=".navbar-collapse.in">Liste des praticiens sans les spécialités</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-center">
                             <br>

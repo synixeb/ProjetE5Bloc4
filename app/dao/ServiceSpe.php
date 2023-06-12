@@ -3,6 +3,7 @@
 namespace App\dao;
 
 use App\Exceptions\MonException;
+use App\metier\Praticien;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Request;
@@ -114,6 +115,20 @@ class ServiceSpe
                 ->get();
             return $mesPraSpe;
         }catch (Exception $e){
+            throw new MonException($e->getMessage(),5);
+        }
+    }
+
+    public function getListeNonPraSpe($id){
+        try {
+            $mesNonPraSpe = DB::table('praticien')->whereNotIn('id_praticien', function ($query) {
+                $query->select('id_praticien')
+                    ->from('posseder')
+                    ->where('id_specialite', 2);
+            })
+                ->get(['id_praticien', 'nom_praticien', 'prenom_praticien']);
+            return $mesNonPraSpe;
+        }catch (QueryException $e){
             throw new MonException($e->getMessage(),5);
         }
     }
