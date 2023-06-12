@@ -100,4 +100,21 @@ class ServiceSpe
             ->get();
         return $results;
     }
+
+    public function getListePraSpe($id)
+    {
+        try{
+            $mesPraSpe= DB::table('posseder')
+                ->Select(    'praticien.id_praticien','praticien.nom_praticien', 'praticien.prenom_praticien')
+                ->From('posseder')
+                ->join('praticien', 'praticien.id_praticien' ,'=' ,'posseder.id_praticien')
+                ->join('specialite', 'specialite.id_specialite' ,'=' ,'posseder.id_specialite')
+                ->where('posseder.id_specialite', '=', $id)
+                ->OrderBy('praticien.id_praticien')
+                ->get();
+            return $mesPraSpe;
+        }catch (Exception $e){
+            throw new MonException($e->getMessage(),5);
+        }
+    }
 }

@@ -113,5 +113,37 @@ class SpeController
         }
     }
 
+    public function getListePraSpe() {
+        try {
+            $monErreur = Session::get('monErreur');
+            Session::forget('monErreur');
+            $unServiceSpe = new ServiceSpe();
+            $mesSpe = $unServiceSpe->AllSpe();
+            return view('Vues/ListePraSpe', compact('mesSpe', 'monErreur'));
+        } catch (MonException $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/error', compact('monErreur'));
+        } catch (Exception $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/error', compact('monErreur'));
+        }
+    }
+
+    public function postListePraSpe()
+    {
+        try {
+            $id = Request::input("idSpe");
+
+            $uneSpe = new ServiceSpe();
+            $resultPraSpe = $uneSpe->getListePraSpe($id);
+
+
+            return view('vues/resultatPraSpe', compact('resultPraSpe', 'resultPraSpe'));
+        } catch (monException $e) {
+            $monErreur = $e->getMessage();
+            return view('vues/pageErreur', compact('monErreur'));
+        }
+    }
+
 
 }

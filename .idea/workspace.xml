@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0eba3bd-92b4-411b-829f-7b1ffcbd2496" name="Default Changelist" comment="Modifications Navbar">
+      <change afterPath="$PROJECT_DIR$/resources/views/vues/ListePraSpe.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vues/resultatPraSpe.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SpeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ServiceSpe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ServiceSpe.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vues/ResultatRecherche.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vues/ResultatRecherche.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,14 +156,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/hbela/AngularE5Bloc4",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/hbela/ProjetE5Bloc4&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\vial\ProjetTemplate\config" />
@@ -205,6 +208,17 @@
       <workItem from="1685435558113" duration="19000" />
       <workItem from="1685619858707" duration="3763000" />
       <workItem from="1685623963196" duration="17000" />
+      <workItem from="1685627590993" duration="939000" />
+      <workItem from="1685630300753" duration="1395000" />
+      <workItem from="1685950143712" duration="25000" />
+      <workItem from="1685952331585" duration="56000" />
+      <workItem from="1686045653594" duration="750000" />
+      <workItem from="1686050588785" duration="24000" />
+      <workItem from="1686231519804" duration="63000" />
+      <workItem from="1686307042301" duration="155000" />
+      <workItem from="1686552927366" duration="380000" />
+      <workItem from="1686554115823" duration="18000" />
+      <workItem from="1686555310110" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inital">
       <created>1680788951801</created>
@@ -283,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685435067585</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Modifications Navbar">
+      <created>1685627601369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685627601369</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
